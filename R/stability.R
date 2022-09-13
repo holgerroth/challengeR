@@ -208,7 +208,7 @@ stabilityByAlgorithm.bootstrap.list=function(x,
                            limits=c(.4, max(rankDist$rank)),
                            breaks=breaks)+
         xlab("Task")+
-        ylab("Rank")
+        ylab("Rank") + theme(text = element_text(size = 16))
       
     } else {
       pl=list()
@@ -246,7 +246,7 @@ stabilityByAlgorithm.bootstrap.list=function(x,
                              limits=c(.4, max(rankDist$rank)),
                              breaks=breaks)+
           xlab("Task")+
-          ylab("Rank")
+          ylab("Rank") + theme(text = element_text(size = 16))
       }
       names(pl) = ordering
       class(pl) <- "ggList"
@@ -306,7 +306,7 @@ stabilityByAlgorithm.bootstrap.list=function(x,
                    size=.4,
                    linetype="dotted",
                    data=results) +
-        xlab("Rank")
+        xlab("Rank") + theme(text = element_text(size = 16))
     } else {
       pl=list()
       for (alg in ordering){
@@ -340,7 +340,7 @@ stabilityByAlgorithm.bootstrap.list=function(x,
                      size=.4,
                      linetype="dotted",
                      data=results.alg) +
-          xlab("Rank")
+          xlab("Rank") + theme(text = element_text(size = 16))
       }
       names(pl) = ordering
       class(pl) <- "ggList"

@@ -60,7 +60,7 @@ report.bootstrap.list=function(object,
                                latex_engine="pdflatex",
                                clean=TRUE,
                                fig.format = NULL, # file format of figures if clean==FALSE, can be vector, e.g. fig.format=c('jpeg','png', 'pdf')
-                               dpi = 150, # DPI, relevant for bitmaps if clean==FALSE and fig.format specified
+                               dpi = 300, # DPI, relevant for bitmaps if clean==FALSE and fig.format specified
                                open=TRUE,...){
 
   # if any missing performance value and na.treat not given in as.challenge stop
@@ -185,7 +185,7 @@ report.ranked.list=function(object,
                             latex_engine="pdflatex",
                             clean=TRUE,
                             fig.format = NULL, # file format of figures if clean=FALSE, can be vector, e.g. fig.format=c('jpeg','png', 'pdf')
-                            dpi = 150, # DPI, relevant for bitmaps if clean==FALSE and fig.format specified
+                            dpi = 300, # DPI, relevant for bitmaps if clean==FALSE and fig.format specified
                             open=TRUE,
                             ...){
   report.bootstrap.list(object, consensus, file, title, colors, format, latex_engine, clean, fig.format, dpi, open, ...)

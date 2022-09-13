@@ -23,7 +23,8 @@ editor_options:
 
 
 ```{r setup, include=FALSE}
-options(width=80)
+#options(width=80)
+options(width=160)
 #out.format <- knitr::opts_knit$get("out.format")
 out.format <- knitr::opts_knit$get("rmarkdown.pandoc.to")
 
